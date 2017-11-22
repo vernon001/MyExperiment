@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+<meta charset="UTF-8" />
+<title>用户展示界面</title>
+<style type="text/css">
+html, body {
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+
+iframe {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+
+.layout {
+	background: #ffffcc;
+	border-radius: 0%;
+	border: 1px solid #666666;
+	border-radius: 0%;
+}
+
+#container {
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+	width: 100%;
+}
+
+#headContainer {
+	position: relative;
+	height: 80px;
+}
+
+#leftContainer {
+	position: absolute;
+	width: 270px;
+	top: 82px;
+	bottom: 0px;
+	background:
+}
+
+#contentContainer {
+	position: absolute;
+	left: 272px;
+	right: 0px;
+	top: 82px;
+	bottom: 0px;
+}
+</style>
+</head>
+<body>
+	<div id="container">
+		<div id="headContainer" class="layout">
+			<h2>SpringBoot示例程序</h2>
+		</div>
+		<div id="leftContainer" class="layout">
+			<ul>
+				<li>示例连接地址1</li>
+				<li>示例连接地址2</li>
+			</ul>
+		</div>
+		<div id="contentContainer" class="layout">
+			<iframe></iframe>
+		</div>
+	</div>
+</body>
+</html>
