@@ -1,5 +1,6 @@
 package cn.com.zhanghb.SpringBoot.POJO;
 
+//This is my first spring boot sample.
 public class Greeting {
 	private final long id;
 	private final String content;
