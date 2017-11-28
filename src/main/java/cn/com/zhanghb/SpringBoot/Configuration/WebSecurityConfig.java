@@ -1,9 +1,9 @@
 /**                       WebSecurityConfig.java
- *作者：
+ *作者：张鸿波
  *创建日期：2017年11月16日
  *修改订者：
  *修订日期：
- *文件描述：
+ *文件描述：提供网页内容安全访问控制
  *修改订内容：             
  */
 package cn.com.zhanghb.SpringBoot.Configuration;
