@@ -22,6 +22,11 @@ iframe {
 	margin:0px;
 }
 
+.logout{
+	position:absolute;
+	margin-right:0px;
+}
+
 #container {
 	position: relative;
 	margin: 0px;

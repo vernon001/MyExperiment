@@ -2,24 +2,57 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:th="http://www.thymeleaf.org"
 	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<style type="text/css">
+html,body {
+	position: relative;
+	height:100%;
+	padding:0px;
+	margin:0px;
+}
+
+table {
+	border: 1px solid #666;
+}
+table tr{
+	height:40px;
+}
+
+#Container {
+	position: absolute;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	text-align: center;
+	vertical-align: middle;
+	background: #ccffff;
+	margin-top: 0px;
+}
+</style>
 <head>
 <title>Spring Security Example</title>
 </head>
 <body>
-	<div th:if="${param.error}">Invalid username and password.</div>
-	<div th:if="${param.logout}">You have been logged out.</div>
-	<form th:action="@{/login}" method="post">
-		<div>
-			<label> User Name : <input type="text" name="username" />
-			</label>
-		</div>
-		<div>
-			<label> Password: <input type="password" name="password" />
-			</label>
-		</div>
-		<div>
-			<input type="submit" value="Sign In" />
-		</div>
-	</form>
+	<div id="Container">
+		<div th:if="${param.error}">无效的用户名或密码。</div>
+		<div th:if="${param.logout}">你已经从网站中注销。</div>
+		<form th:action="@{/login}" method="post">
+			<div>
+				<table>
+					<tr>
+						<td class="lable"><em>用户名</em></td>
+						<td class="content"><input type="text" name="username" /></td>
+					</tr>
+					<tr>
+						<td class="label"><em>密 码</em></td>
+						<td class="content"><input type="password" name="password" /></td>
+					</tr>
+				</table>
+			</div>
+			<div>
+				<input type="submit" value="登陆" />
+			</div>
+		</form>
+	</div>
 </body>
 </html>
